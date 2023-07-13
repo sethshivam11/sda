@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3rem;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #000000;
+    margin: .5rem 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+#logo img{
+    height: 2.5rem;
+}
+#navbar{
+    background-color: #ffffff;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    padding: 26px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+#navbar li a:hover{
+    background-color: #3f3f3f;
+    color: #ffffff;
+}
+#introSection{
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: 'Yeon Sung', cursive;
+    color: black;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+}
+#typesSection{
+    background-color: #ffffff;
+    width: 100%;
+    height: 75%;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Yeon Sung', cursive;
+}
+.card{
+    width: fit-content;
+    height: 75%;
+    display: inline-block;
+    /* border: 2px solid grey; */
+    text-align: center;
+    /* border-radius: 5%; */
+}
+.card img:hover{
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+}
+.card img{
+    margin: 1rem 0.5rem;
+    /* border-radius: 4%; */
+    height: 100%;
+    transition: all .5s ease 0.2s;
+}
+#aboutSection{
+    border-top: 1px solid grey;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+#aboutSection .card{
+    width: fit-content;
+    height: 50%;
+    margin: 2rem 3rem;
+    border: none;
+}
+
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5%;
+    padding-top: 5px;
+}

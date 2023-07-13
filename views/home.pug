@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts 
+        script(src="../static/index.js")
+block style 
+    style 
+        include ../static/style.css
+block content 
+    section#introSection
+            h1 Shivam Dance Academy
+            p EaT SleEP dAnCe RePeAT :&#41;
+    section#typesSection 
+            h1 Dance Forms we Teach
+            div.card 
+                img(src="img/hiphop.jpg")
+            div.card 
+                img(src="img/freestyle.jpg")
+            div.card 
+                img(src="img/ballet.jpg")
+            div.card 
+                img(src="img/traditional.jpg")
+            div.card 
+                img(src="img/couple.jpg")
+    section#aboutSection 
+            h1 About Us 
+            div.card 
+                a(href="https://whatsapp.com/9670232631" target="_blank") #[img(src="img/whatsapp.png")]
+            div.card 
+                a(href="https://instagram.com/_seth_shivam" target="_blank") #[img(src="img/instagram.png")]
+            div.card 
+                a(href="https://gmail.com/braisepascal287@gmail.com" target="_blank") #[img(src="img/mail.png" style="filter: invert(50%)")]
+            div.card 
+                a(href="https://twitter.com/shivam700216" target="_blank") #[img(src="img/twitter.png")]

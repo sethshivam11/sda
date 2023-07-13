@@ -1,0 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+.image{
+    display: none;
+    height: 100px;
+}
+

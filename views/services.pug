@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts 
+        //- script(src="../static/index.js")
+        script(src="services.js")
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleServices.css
+block content 
+    div.container
+        img#1.image(src="img/ballet.jpg")
+        img#1.image(src="img/couple.jpg")
+        img#2.image(src="img/freestyle.jpg")
+        img#3.image(src="img/hiphop.jpg")
+        img#4.image(src="img/traditional.jpg")
+        button#btn(onclick='')
+            |>

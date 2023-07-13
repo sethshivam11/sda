@@ -1,0 +1,19 @@
+html 
+    head 
+        title SDA
+        block scripts 
+        block style
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="img/logo.png")
+                    |SDA
+                li #[a(href="/") Home]
+                li #[a(href="/services") Services]
+                li #[a(href="/about") About]
+                li #[a(href="/class") Class Info]
+                li #[a(href="/contact") Contact Us]
+        block content
+        footer#footer 
+            | Copyright 2222 SDA | All Rights to you
