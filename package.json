@@ -14,5 +14,12 @@
     "mongoose": "^7.2.0",
     "nodemon": "^2.0.22",
     "pug": "^3.0.2"
-  }
+  },
+  "keywords": [
+    "this",
+    "is",
+    "a",
+    "dance",
+    "website"
+  ]
 }
