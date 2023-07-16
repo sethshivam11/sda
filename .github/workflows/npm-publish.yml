@@ -32,6 +32,6 @@ jobs:
       - run: npm i express -g
       - run: npm i body-parser -g
       - run: npm i nodemon -g
-      - run: nodemon app.js
+      - run: node app.js
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
