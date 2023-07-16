@@ -28,9 +28,9 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm i mongoose -g
-      - run: npm i express -g
-      - run: npm i body-parser -g
+      - run: npm i mongoose
+      - run: npm i express
+      - run: npm i body-parser
       - run: npm i nodemon -g
       - run: node app.js
         env:
