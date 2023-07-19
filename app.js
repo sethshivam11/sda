@@ -8,8 +8,6 @@ const bodyparser = require('body-parser');
 const dotenv = require("dotenv");
 dotenv.config();
 
-console.log(typeof MONGODB_URL + MONGODB_URL);
-
 mongoose.set("strictQuery", false);
 mongoose.connect('MONGODB_URL', {
     useNewUrlParser: true,
@@ -29,6 +27,7 @@ var Contact = mongoose.model('Contact', contactSchema);
 
 app.use(express.static('static'));
 app.use(express.urlencoded());
+app.use(bodyparser.urlencoded());
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug'); // Set the template engine as pug
