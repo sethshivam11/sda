@@ -7,11 +7,10 @@ const bodyparser = require('body-parser');
 const dotenv = require("dotenv");
 dotenv.config();
 
-exports.connect = () => {
-    mongoose.connect('MONGODB_URL', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
+mongoose.connect('MONGODB_URL', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 // Define mongoose schema
 var contactSchema = new mongoose.Schema({
