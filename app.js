@@ -25,7 +25,7 @@ var contactSchema = new mongoose.Schema({
 var Contact = mongoose.model('Contact', contactSchema);
 
 app.use(express.static('static'));
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug'); // Set the template engine as pug
