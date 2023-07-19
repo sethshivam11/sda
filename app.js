@@ -67,6 +67,6 @@ app.post('/contact', (req, res) =>{
 });
 
 // START THE SERVER
-app.listen({ port: PORT, signal }, ()=>{
-    console.log(`The application is running on port ${port}`);
+app.listen( PORT, ()=>{
+    console.log(`The application is running on port ${PORT}`);
 });
