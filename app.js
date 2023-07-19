@@ -4,7 +4,6 @@ const path = require('path');
 const MONGODB_URL = process.env;
 const mongoose = require('mongoose');
 const PORT = process.env;
-const bodyparser = require('body-parser');
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -27,7 +26,6 @@ var Contact = mongoose.model('Contact', contactSchema);
 
 app.use(express.static('static'));
 app.use(express.urlencoded());
-app.use(bodyparser.urlencoded());
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug'); // Set the template engine as pug
