@@ -3,13 +3,14 @@ const app = express();
 const path = require('path');
 const MONGODB_URL = process.env;
 const mongoose = require('mongoose');
-const port = 80;
+const PORT = process.env;
 const bodyparser = require('body-parser');
 const dotenv = require("dotenv");
 dotenv.config();
 
 console.log(typeof MONGODB_URL + MONGODB_URL);
 
+mongoose.set("strictQuery", false);
 mongoose.connect('MONGODB_URL', {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -69,6 +70,6 @@ app.post('/contact', (req, res) =>{
 });
 
 // START THE SERVER
-app.listen(port, ()=>{
+app.listen(PORT, ()=>{
     console.log(`The application is running on port ${port}`);
 });
