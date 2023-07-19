@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { MONGODB_URL } = process.env;
-
+console.log(typeof MONGODB_URL);
 exports.connect = () => {
   mongoose.set("strictQuery", false);
   mongoose.connect(MONGODB_URL , {
