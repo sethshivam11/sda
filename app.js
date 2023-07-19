@@ -8,6 +8,8 @@ const bodyparser = require('body-parser');
 const dotenv = require("dotenv");
 dotenv.config();
 
+console.log(typeof MONGODB_URL + MONGODB_URL);
+
 mongoose.connect('MONGODB_URL', {
     useNewUrlParser: true,
     useUnifiedTopology: true
