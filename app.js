@@ -1,29 +1,29 @@
+const dotenv = require("dotenv").config();
 const express = require('express');
 const app = express();
 const path = require('path');
 const MONGODB_URL = process.env;
 const mongoose = require('mongoose');
 const PORT = 80;
-const dotenv = require("dotenv");
-dotenv.config();
+require("./database").connect();
 
-console.log(MONGODB_URL);
-mongoose.set("strictQuery", false);
-mongoose.connect('MONGODB_URL', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+// console.log(MONGODB_URL);
+// mongoose.set("strictQuery", false);
+// mongoose.connect('MONGODB_URL', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
 
 // Define mongoose schema
-var contactSchema = new mongoose.Schema({
-    name: String,
-    phone: String,
-    email: String,
-    address: String,
-    desc: String
-});
-//model for schema
-var Contact = mongoose.model('Contact', contactSchema);
+// var contactSchema = new mongoose.Schema({
+//     name: String,
+//     phone: String,
+//     email: String,
+//     address: String,
+//     desc: String
+// });
+// //model for schema
+// var Contact = mongoose.model('Contact', contactSchema);
 
 app.use(express.static('static'));
 app.use(express.urlencoded({ extended: true }));
