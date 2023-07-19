@@ -6,6 +6,7 @@ exports.connect = () => {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
+}
 var contactSchema = new mongoose.Schema({
     name: String,
     phone: String,
