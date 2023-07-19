@@ -7,6 +7,7 @@ const PORT = 80;
 const dotenv = require("dotenv");
 dotenv.config();
 
+console.log(MONGODB_URL);
 mongoose.set("strictQuery", false);
 mongoose.connect('MONGODB_URL', {
     useNewUrlParser: true,
