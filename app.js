@@ -4,8 +4,14 @@ const path = require('path');
 const port = 80;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
+const dotenv = require("dotenv");
+dotenv.config();
 
-mongoose.connect('mongodb://127.0.0.1/contact', {useNewUrlParser: true});
+exports.connect = () => {
+    mongoose.connect('MONGODB_URL', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    });
 
 // Define mongoose schema
 var contactSchema = new mongoose.Schema({
