@@ -8,8 +8,5 @@ exports.connect = () => {
     mongoose.connect(MONGODB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true
-    }).then()
-    .catch((error) => {
-        console.log(error);
-    });
+    }
 }
