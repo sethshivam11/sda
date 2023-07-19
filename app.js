@@ -5,7 +5,7 @@ const port = 80;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const dotenv = require("dotenv").config();
-require("./databse").connect();
+require("./database").connect();
 
 // // Define mongoose schema
 var contactSchema = new mongoose.Schema({
