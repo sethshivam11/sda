@@ -16,5 +16,4 @@ jobs:
       - run: npm install
       - run: npm install express
       - run: npm install body-parser
-      - run: npm install mongoose
       - run: node app.js
