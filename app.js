@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const PORT = process.env;
+const port = 80;
 const mongoose = require('mongoose');
-const bodyparser = require('body-parser');
 const dotenv = require("dotenv").config();
 require("./database").connect();
 
-// // Define mongoose schema
 var contactSchema = new mongoose.Schema({
     name: String,
     phone: String,
@@ -61,6 +59,6 @@ app.post('/contact', (req, res) =>{
 });
 
 // START THE SERVER
-app.listen(PORT, ()=>{
-    console.log(`The application is running on port ${PORT}`);
+app.listen(port, ()=>{
+    console.log(`The application is running on port ${port}`);
 });
