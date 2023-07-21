@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 80;
+const PORT = process.env;
 const mongoose = require('mongoose');
 const dotenv = require("dotenv").config();
 require("./database").connect();
@@ -59,6 +59,6 @@ app.post('/contact', (req, res) =>{
 });
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application is running on port ${port}`);
+app.listen(PORT, ()=>{
+    console.log(`The application is running on port ${PORT}`);
 });
