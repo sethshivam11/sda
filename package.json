@@ -1,4 +1,16 @@
 {
-  "name": "simple",
-  "main": "app.js"
+  "name": "sda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --env-file=.env app.js"
+  },
+  "author": "shivam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "pug": "^3.0.2"
+  }
 }
